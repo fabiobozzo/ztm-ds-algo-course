@@ -1,0 +1,10 @@
+# When to use recursion
+
+e.g. Using a tree or converting something into a tree
+
+Rules: 
+- Divide into a number of subproblems that are smaller instances of that same problems
+- Each instance of the subproblem is identical in nature
+- The solution of each subproblem can be combined to solve the problem at hand
+
+Divide and Conquer!

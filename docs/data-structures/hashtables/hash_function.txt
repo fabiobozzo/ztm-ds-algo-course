@@ -1,0 +1,13 @@
+# Hash function
+
+Generates a value of fixed length for every input it gets. 
+examples: MD5, SHA-1, SHA-256...
+
+it's impossible -or very difficult- to reverse hashes (from hash to input string)
+changing even the smallest details, completely changes the result hash
+but it's idempotent! the same input always generates the same output.
+
+isn't it slow? no :) 
+SHA-256 takes a lot of time, it's used for cryptography.
+
+we assume O(1)

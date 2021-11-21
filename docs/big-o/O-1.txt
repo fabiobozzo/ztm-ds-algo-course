@@ -1,0 +1,8 @@
+# O(1)
+
+If my function executes one op, no matter how big the input grows.
+
+Instead of linear time, it's CONSTANT time.
+
+Of course, if the number of executed ops is ... 3, it will be O(3), same stuff, constant.
+It's the 'excellent' part of the efficiency chart.

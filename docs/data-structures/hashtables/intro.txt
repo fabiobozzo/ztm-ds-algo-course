@@ -1,0 +1,27 @@
+# Hash tables
+
+Many languages, many different names:
+JS: objects
+Java: Maps
+Ruby: Hashes
+Python: Dictionaries...
+
+Name meaning? 
+Easy explanation: grocery list -> key:product, value:quantity
+e.g.
+grapes   1
+banana   5
+apple    2
+
+'grapes' is passed to an hash function (black box) -> a key index is generated (memory address), where the value can be stored.
+the hash function has to decide where to put the values.
+
+operations:
+
+- insert
+- lookup
+- delete
+- search
+
+everything is O(1) !
+no need to shift indexes like in arrays

@@ -1,0 +1,15 @@
+# Types of Graphs
+
+Directed: e.g. Twitter. connections are unidirectional.
+Undirected: e.g. Facebook (if I'm a friend with someone, he's also friend of mine)
+
+Weighted: not just the nodes can carry information, also edges. e.g. "distances" from two vertex
+Unweighted: edges have no values.
+
+Cyclic: you can traverse the graph and go back to the original vertex (at least in one case).
+Acyclic: no cycles.
+
+https://internet-map.net/
+
+Direct Acyclic Graph (DAG) is pretty common. 
+Blockchain project IOTA uses it.

@@ -1,0 +1,54 @@
+# Hash collisions
+
+https://www.cs.usfca.edu/~galles/visualization/OpenHash.html
+
+There's no way to tell the hash function to evenly distribute elements of the table. (see animation above)
+
+A collision happens when a key is hashed to the same memory address. 
+There are many ways to handle collisions. The course shows 'separate chaining' (key-buckets and a overflow entries table with the collided values)
+
+Depending on the size of the hash table, the BigO could occasionally be O(n):
+
+He creates an hash table base on an array of "pairs" (array of two elements, where the 1st is the key and 2nd the value)
+The array has a fixed size. 
+The hash function is simple: 
+```
+_hash(key) {
+    let hash = 0;
+    for (let i =0; i < key.length; i++){
+        hash = (hash + key.charCodeAt(i) * i) % this.data.length
+    }
+    return hash;
+  }
+```
+
+The SET op is always O(1):
+```
+set(key, value) {
+    let address = this._hash(key);
+    if (!this.data[address]) {
+      this.data[address] = [];
+    }
+    this.data[address].push([key, value]);
+    return this.data;
+  }
+```
+
+The GET op could be O(n) in unfortunate cases, but the technique is really cool:
+```
+get(key){
+    const address = this._hash(key);
+    const currentBucket = this.data[address]
+    if (currentBucket) {
+      for(let i = 0; i < currentBucket.length; i++){
+        if(currentBucket[i][0] === key) {
+          return currentBucket[i][1]
+        }
+      }
+    }
+    return undefined;
+  }
+}
+```
+
+In most cases each sub-array has just one element (good hash function, a lot of space) but in case of collisions, it simply overflows.

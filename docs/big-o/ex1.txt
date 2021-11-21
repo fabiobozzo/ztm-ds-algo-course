@@ -1,0 +1,26 @@
+function funChallenge(input) {
+  let a = 10;
+  a = 50 + 3;
+
+  for (let i = 0; i < input.length; i++) {
+    anotherFunction();
+    let stranger = true;
+    a++;
+  }
+  return a;
+}
+
+// 
+
+# Solution
+
+assignment: is it a BigO op? not sure. let's say it's O(1)
+sum: it's another O(1)
+
+loop is linear time -> O(n)
+`anotherFunction` is another O(n)
+all the ops inside the loop are O(n) actually
+
+(the guy puts a comment with the O() next to each line)
+and the calculation at the end, like: 1 + 1 + 1 + n + n + n + n = O(3+ 4n)
+O(3+ 4n) is simplified as... O(n)

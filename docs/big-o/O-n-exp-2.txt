@@ -1,0 +1,17 @@
+# O(n^2)
+
+```
+const boxes = [1,2,3,4,5] // Log all pairs!
+
+func logAllPairs(array) {
+    for i := 0; i < len(array); i++ {
+        for j := 0; j < len(array); j++ {
+            log("{i},{j}")
+        }
+    }
+}
+```
+
+-> O(n*n) -> O(n^2)
+
+It's called QUADRATIC time. The O() function is a curve. 

@@ -1,0 +1,18 @@
+# Tries
+
+Specialized tree used in text search.
+
+They allow us to know if a word -or part of a word- exists in a body of text.
+Empty root node, starting point.
+
+Not a binary tree, letters are added. 
+Second level nodes could be at max 26 (letters of the alphabet)
+
+E.g. One child of the root is 'N'. Two branches under N represents the words 'News' and 'Not'.
+
+Trie = prefix tree.
+Autocompletion is based on tries.
+
+The BigO for words lookup is O(length of the word).
+Great use of space complexity. 
+We don't have to store multiple times the common parts of similar words.

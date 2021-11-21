@@ -1,0 +1,12 @@
+# Trees
+
+Hierarchical (non-linear) structure.
+Parent-child unidirectional relationships.
+Every child descends only from one parent.
+Leaf nodes are the very end of the structure.
+Subtrees are important too.
+
+The DOM is a good example of a tree.
+The first chess playing algorithms were based on trees.
+
+Linked lists are also trees! Just with one only path.

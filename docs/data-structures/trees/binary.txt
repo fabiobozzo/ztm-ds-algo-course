@@ -1,0 +1,19 @@
+# Binary Tree
+
+Each node can have just 0, 1, 2 child nodes!
+
+We're looking for "full trees" or even "perfect"
+
+Perfect: everything is filled, there is no parent node with just one child.
+Full: 0 or 2 children, never 1.
+
+The perfect one is efficient and desirable, because of two properties: 
+- the number of nodes on each level is double than the previous level.
+- the number of nodes on the last level is equal to the sum of all the above nodes +1.
+
+By organizing data in binary trees.. we get efficiency.
+New BigO notation! 
+
+- lookup O(log N)
+- insert O(log N)
+- delete O(log N)

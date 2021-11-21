@@ -1,0 +1,32 @@
+# Environment setup
+
+- Javascript
+- Repl.it
+- Glot.io
+
+# Big O
+
+official: Big-O asyntotic analysis
+goal: how well a problem is solved?
+good code vs bad code
+Big O is everywhere in data structures and algorithms
+
+# Good code
+
+1. Readable (clean, for others)
+2. Scalable (Big O)
+
+We wanna make a cake
+Recipe -> Kitchen -> Cake
+same with computers
+
+BigO is a measure of efficiency.
+
+# Nemo
+for-loop search in array (function findNemo)
+takes 0 seconds with 1 element array. 
+with a huge array it takes much more, depends on the language, on the computer power, other programs executing
+on everyone's computer it takes different time. 
+so how do we determine the absolute efficiency of code? -> BigO
+
+" how many operations (steps) a function performs? "

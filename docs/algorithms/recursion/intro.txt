@@ -1,0 +1,15 @@
+# Recursion
+
+It's more a concept than an algo.
+Popular topic in interview.
+
+e.g. searching for files in a filesystem.
+
+What is recursion? Is when you define something in terms of yourself.
+
+-> A recursive function refers to itself.
+
+How does it help with problems?
+It's great for task that have repeated sub-tasks to do.
+
+Searching, sorting.. e.g. traversing a tree.

@@ -1,0 +1,19 @@
+# O(n)
+
+In the findNemo example, BigO is O(n) because the number of operations done is exactly the same as the number of elements in the `everyone` array.
+O(n) is one of the most common notations
+
+-> BigO measures how quickly the runtime grows
+
+Scalability means: as things grow larger and larger, does it scale?
+
+# O(n!)
+
+- nested loop for every input element
+- most terrible one. unlikely
+
+# length of a string
+
+`'alskjdlkwleknd'.length` -> time complexity? 
+it depends on the language, on the implementation. 
+it could be O(n), if looping over each char is necessary, or O(1) if it's a linked list, an object where .length is just a prop.

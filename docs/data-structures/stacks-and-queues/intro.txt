@@ -1,0 +1,37 @@
+# Stacks
+
+Linear data-structures. 
+Sequential traversal. 
+only one element can be reached at the same time, the one at the beginning, or the end.
+No random access ops. 
+
+Higher level built on top of arrays/linked lists. 
+Limiting is a benefit, you can control users only do the right ops. 
+Too much is freedom is bad sometimes.
+
+stacks are LIFO structures. like a pile of plates.
+you can remove only the last plate added on the top. 
+
+- lookup O(n)
+- push O(1)
+- pop O(1)
+- peek O(1)
+
+Widely used in programming models, for function calls.
+push when a function is called
+pop when a function returns
+another example is browser history, also undo/redo features.
+
+# Queues
+
+It's the opposite of stacks.
+FIFO. like a people line. 
+the first in line exit the line first.
+
+- lookup O(n)
+- enqueue O(1)
+- dequeue O(1)
+- peek O(1)
+
+using an array for a queue is bad because it implies removing the first element, unshifting -> High big O
+for a stack... it depends. with fixed size, we could benefit from arrays cache locality (same memory area). if dynamic size... no.

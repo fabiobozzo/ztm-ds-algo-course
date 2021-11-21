@@ -1,0 +1,8 @@
+# Anatomy of recursion
+
+Every recursive function needs to have a 'base case'. 
+
+e.g. file search in a fs:
+- recursive case: there are subfolders, call the function again
+- base case: no unexplored subfolders left, stop calling the function
+

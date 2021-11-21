@@ -1,0 +1,41 @@
+# Definition
+
+Data structures are collection of values. With relations between them and/or functions applied to them.
+Each good and specialized to do its own things.
+Each container, in reality is good at storing some objects and not other objects.
+Mentioned to blockchain.
+
+https://en.wikipedia.org/wiki/List_of_data_structures
+
+1. how to build
+2. how to use (more important)
+
+Which one to pick for a given problem?
+
+# how computer store data structures
+
+a computer is run by a CPU, the little worker doing calculations.
+it needs access to the RAM (faster) and to the storage.
+code creates variables in RAM. 
+but to keep those after a reboot, we need some kind of storage.
+RAM is like a huge shelf, each holds a give number of bits (1/0 -on/off- numbers). 
+the CPU asks the memory controller for addresses in memory.
+access to adjacent memory addresses is faster.
+CPU has also a little memory space itself (a cache with most recently used stuff).
+integers are typically put in 32bit-large blocks of memory
+
+resources about memory:
+https://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html
+course: https://www.youtube.com/watch?v=fpnE6UAfbtU&ab_channel=CrashCourse
+
+each language has its own defined primitive data types and... data structures! ready to use.
+They are variations on how to store the same data, in the end. 
+
+# Operations on data structures
+
+- Insertion
+- Deletion
+- Traversal (access each data item exactly once so that can be processed)
+- Searching
+- Sorting
+- Access

@@ -1,0 +1,21 @@
+# Sorting
+
+Why is it important? It's already in the stdlib.
+It's important for interviews and thought process. 
+Sometimes they tell you the input is sorted, and that counts!
+
+We don't care about small inputs! Sorting problems are all about large datasets.
+It's crazy and expensive for companies. It must be optimal.
+
+Random data is hard to access. 
+Sorting algorithm has to be chosen depending on the problem.
+
+Only a few of the many algo are important. 
+Trade-offs are the key to choose one. 
+
+- Bubble sort
+- Insertion sort
+- Selection sort
+- Merge sort
+- Quick sort
+

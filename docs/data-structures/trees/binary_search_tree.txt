@@ -1,0 +1,14 @@
+# Binary search trees
+
+very common, is a subset of binary trees.
+really good at searching, great at comparing things.
+they preserve relationships (e.g. fs folder hierarchy)
+
+Data is SORTED.
+
+Rules:
+1. all child nodes to the right of the root node must be greater than the current node
+2. all child nodes to the left of the root node must be lower than the current node.
+3. a node can only have up to two children
+
+worst than array for lookups, better for the rest.

@@ -1,0 +1,6 @@
+# The issue with sort()
+
+Don't always trust your language's built-in sort method.
+Javascript has a shitty one. It converts numbers to strings. -_-
+A similar example is Italian letters (strings starting with an accent)
+sort() uses the lexicographical order (.charCodeAt()) -> ascii index used to compare.

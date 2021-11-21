@@ -1,0 +1,31 @@
+# Binary Heaps
+
+They are binary trees. 
+Every child of a MAX-heap node is lower than its parent.
+With MIN-heaps, each node is higher than its parent. 
+
+Important when sorting is needed. (priority).
+Lookup is O(n), less than bst because is less ordered.
+
+Why is it used than? 
+Imagine you want values more than 33. 
+With BST it would be difficult.
+
+See examples in Visualgo https://visualgo.net/en/heap
+(add the biggest value)
+
+Memory heap != binary heap. 
+Memory heap is a free storage for variables, as opposed to the stack.
+Two different things!
+
+It's always left to right insertion, the order of insertion is preserved.
+You can even swap nodes on the same level without breaking the rules.
+
+
+# Priority queues
+
+Each element has a priority. 
+Higher priority means an element get dequeued first. 
+E.g. a club line, with normal people and VIPs. 
+An airplane: the captain must enter before normal passengers, 
+so he's moved to the root node of a MAX-heap (has higher value)

@@ -1,0 +1,15 @@
+# Stack overflow
+
+```
+function something() {
+    something()
+}
+
+something()
+```
+
+If you debug that function, you see that the 'call stack' fills up.
+Each function call pushes allocated memory space in the call stack.
+When there's no more space, it's stack overflow.
+
+It happens if the recursive function has no way to exit and stop, eventually.

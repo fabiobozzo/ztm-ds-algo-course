@@ -1,0 +1,17 @@
+# Graphs
+
+Most important and useful data structure in cs, when it comes to modeling real life.
+
+In short, a graph is a set values connected each other.
+Each value is a node, or vertex.
+The connections between nodes are called edges.
+
+Use cases: any relationship. 
+Family tree, friendships, networks, roads... 
+
+---
+
+When it comes to BigO things get complicated (many different types).
+But they're necessary for relationships (or things like finding shortest paths).
+HARD TO SCALE.
+You rarely use them directly in production. Usually you use tools like Neo4j.

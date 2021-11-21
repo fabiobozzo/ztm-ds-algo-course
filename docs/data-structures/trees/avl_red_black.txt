@@ -1,0 +1,9 @@
+# AVL Trees + Red Black Trees
+
+Balanced binary trees are a must!
+Two different techniques. 
+
+AVL for example let the insert() unbalance the tree, then it walks back and re-balances the tree
+
+https://medium.com/basecs/painting-nodes-black-with-red-black-trees-60eacb2be9a5
+https://medium.com/basecs/the-little-avl-tree-that-could-86a3cae410c7

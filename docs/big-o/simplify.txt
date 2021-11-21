@@ -1,0 +1,29 @@
+# Rules
+
+- Big O() in interviews falls always in the chart
+
+## 1. Worst case
+
+The first implementation of findNemo() (searching an array) was bad, not stopping when nemo was found!
+[ But BigO cares only for the worst case ]
+In the example of the array-search, the element to find is at the end of the array. 
+
+## 2. Drop the constants
+
+Unless we find O(1), obviously, we remove the constants (e.g. there's a loop from 1 to 100, and a loop on input, it's stil O(n), not O(n + 100)).
+Also in case we have TWO for loops on the input, it would be O(2n). But we drop the constants, so -> O(n). It's still linear!
+[ We don't care how steep the line is, but how it moves as our input increases ]
+
+## 3. Different terms for inputs
+
+I have two different arrays as input. 
+First one has 10 elements. Second one has 1000000 elements.
+Then I have two loops, one for each array. 
+[ BigO would be O(a + b) ]
+
+In case those were nested -> O(a*b)
+
+## 4. Drop non-dominant terms
+
+function with one loop on n, and two nested loops on n.
+O(n + n^2) -> O(n^2) ... because the linear `n` becomes irrelevant for BigO.

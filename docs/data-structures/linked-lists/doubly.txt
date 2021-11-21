@@ -1,0 +1,12 @@
+# Doubly linked lists
+
+They have two pointers. The usual one to the next node and another one pointing to the PREVIOUS node!
+
+Singly is simple to implement. 
+A little bit faster, less ops. 
+Downside: cannot be traversed from tail to head.
+Fast insertion/deletion, not much searching.
+
+Doubly can be traversed in both senses.
+a bit more complex, more storage, a few more ops.
+good when you have no limitations of memory, suitable for searches.

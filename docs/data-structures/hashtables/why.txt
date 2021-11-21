@@ -1,0 +1,16 @@
+You want quick access to named items.
+Sort of a mini database. 
+They're also called associative arrays (we choose our own keys).
+Insertion is immediate.
+But.. order is not guaranteed.
+
+Recap:
+
+HashTables PROs
+- fast lookups (if collision resolution is good enough)
+- fast inserts
+- flexible keys (not just strings)
+
+CONs
+- unordered
+- slow keys iteration

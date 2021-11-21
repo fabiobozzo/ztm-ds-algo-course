@@ -1,0 +1,9 @@
+# Balanced VS Unbalanced BST
+
+If I keep adding nodes higher of 1, they are all added to the right side, making the tree look more like a linked list.
+Unbalanced mean O(n), worst case is looking up every single node. It's bad.
+
+Ideally we want to balance a binary search tree.
+That's possible via a complex algorithm, but in general peeps use ready to use language-provided tree.
+
+(es. avl / red-black)

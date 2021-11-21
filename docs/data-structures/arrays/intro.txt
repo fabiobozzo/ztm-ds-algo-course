@@ -1,0 +1,27 @@
+# Arrays
+
+Sometimes called 'lists'. They are indexed lists.
+Simple and most widely used, least rules, minimum footprint.
+
+- lookup -> O(1)
+- push -> O(1)
+- insert -> O(n)
+- delete -> O(n) 
+
+Little JS show:
+- push (O(1))
+- pop (O(1))
+- unshift (O(n))
+- splice (O(n))
+
+
+# Static vs Dynamic
+
+In C++ Arrays are usually static. Because once you define an array to hold 100 items, there's no guarantee that next memory blocks will stay free, to allow the array growth.
+
+With DYNAMIC arrays we're allowed to copy and rebuild the array in another place in memory. (e.g. `append` method -> automatic resize).
+
+Even though dynamic is more sexy, it could be more expensive (both time and space), when it comes to copy. Sometimes push is O(n) instead of O(1) !
+
+
+

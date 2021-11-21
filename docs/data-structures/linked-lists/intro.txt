@@ -1,0 +1,45 @@
+# Linked lists
+
+- arrays are fixed capacity, and even the dynamic ones have the annoying slow-down when they exceed capacity and need to double it up
+- hash tables are great and fast but... not ordered!
+
+Linked list to the rescue!
+As the name suggests, it's a list with linked elements.
+
+A singly linked list items have each two parts:
+- the item value/content
+- a POINTER to the next item
+
+Head = 1st item
+Tail = last item
+The list is null terminated (the last item's pointer is null)
+
+e.g.
+```
+const basket = ['apples', 'grapes', 'pears']
+
+linked list: apples --> grapes --> pears
+
+apples
+8947 --> grapes
+          8742 --> pears
+                    372 --> null
+```
+
+# Why
+
+Think of insertion in arrays. That requires shifting all the subsequent indices.
+Not the case with linked list.
+
+Arrays -> iteration
+Linked lists -> traversal (no clue where it ends)
+
+Arrays -> sequential memory (faster, items are always located next to each other)
+Linked list -> items are scattered in memory (like hash maps)
+
+BigO:
+- prepend O(1)
+- append O(1)
+- lookup O(n)
+- insert O(n)
+- delete O(n)

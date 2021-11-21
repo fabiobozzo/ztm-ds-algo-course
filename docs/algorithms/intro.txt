@@ -1,0 +1,16 @@
+# Algorithms
+
+An algorithm is a series of steps in a process that we take to perform a desired action with computers.
+No matter the size, both a 2-lines function and a huge ML model are technically, algorithms.
+There are thousands of them, popular and well-established.
+
+Data structures (e.g. Class{}) + Algorithms (e.g. function()) = Programs.
+
+Most common in interviews:
+- Sorting
+- Dynamic Programming
+- BFS + DFS (searching)
+- Recursion
+
+They are important to know about, for scalability, especially in large companies.
+Improving BigO is crucial to scale and handle big data.

@@ -1,0 +1,15 @@
+# Iterative vs recursive
+
+Anything recursive can be written iteratively. 
+Recursive is sometimes more readable but... it's a trade-off.
+It usually keeps your code more 'dry'.
+
+The main problem of recursion is memory footprint, each call to a function adds space to the stack.
+Watch out for stack overflows.
+And sometimes.. it's just too complicated for juniors.
+
+Rule of thumb: use recursion when you're not sure how deep your data structure is. 
+
+In many languages (e.g. ES6) we now have TAIL CALL OPTIMIZATION.
+It allows recursion to work without increasing the call stack. 
+https://2ality.com/2015/06/tail-call-optimization.html
