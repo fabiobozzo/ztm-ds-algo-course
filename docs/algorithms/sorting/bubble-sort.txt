@@ -1,0 +1,9 @@
+# Bubble sort
+
+It's one of the three elementary sorting algo: bubble, insertion, selection.
+
+We look at couple of values, starting from the beginning of an array,
+and we 'bubble up' the bigger number between the two.
+
+Time complexity: O(n^2)
+Space complexity: O(1)

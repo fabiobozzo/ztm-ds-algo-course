@@ -1,0 +1,16 @@
+# Merge sort
+
+Insertion, bubble and selection sort are the elementary algo.
+They have nested for loops: O(n^2). Pretty slow... we can do better.
+
+Here is O(n log(n)):
+- Merge sort
+- Quick sort
+
+They recall the idea of the phone book search, divide et impera.
+They use recursion, dividing each problem down to do work on each subset and then combine the solutions.
+
+How does it work?
+- Divide the array in half
+- Then divide the subsets in half, again.
+- Once we get to an array of 1 element, start merging sub-arrays keeping them sorted

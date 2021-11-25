@@ -1,0 +1,19 @@
+# Quick Sort
+
+Fancy name, it's another divide & conquer algorithm. O(n log(n)).
+
+Pivoting technique.
+
+You choose a pivot, a random index in the array.
+
+Then you put it at the end of the array, swapping it.
+
+You loop from the beginning to the end of the array.
+
+If one item is lower than the pivot (now, the last item),
+then you move it at the loop's index position.
+(that means moving all the lower-than-pivot elements at the beginning of the array).
+
+You move the pivot back in the middle of the list, right after the bigger item lower than itself.
+
+And finally you recursively (quick)sort the array to the left of the pivot and the one on the right.

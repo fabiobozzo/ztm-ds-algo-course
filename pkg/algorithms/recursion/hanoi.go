@@ -15,6 +15,8 @@ type TowerOfHanoi struct {
 	numberOfDisks int
 }
 
+const sleepTime = time.Millisecond * 100
+
 func NewTowerOfHanoi(numberOfDisks int) *TowerOfHanoi {
 	t := TowerOfHanoi{
 		pins: map[string]stacks.Stack{
@@ -31,8 +33,6 @@ func NewTowerOfHanoi(numberOfDisks int) *TowerOfHanoi {
 
 	return &t
 }
-
-const sleepTime = time.Millisecond * 1000
 
 func (t *TowerOfHanoi) Solve() {
 	t.Draw()

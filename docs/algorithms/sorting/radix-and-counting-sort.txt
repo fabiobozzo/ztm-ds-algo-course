@@ -1,0 +1,24 @@
+# Radix sort and Counting sort
+
+It's mathematically impossible to sort faster than O(n log(n)).
+
+There's actually a way to improve it a bit though...
+
+The other algorithms sort by comparison.
+There are a couple of non-comparison ways to sort data:
+
+- Counting sort
+- Radix sort
+
+It's a totally different idea!
+Comparison decides the order of the numbers based on the question: is one number bigger/smaller than another?
+Non-Comparison relies on the way numbers are binary stored in the memory of a computer.
+It's complex!
+
+The gotcha is.. they only work w/ int numbers. (better if they're in a small range, between 0 and 100, let's say).
+The time complexity is O(nk) or O(n+k).
+
+https://brilliant.org/wiki/radix-sort/
+https://www.cs.usfca.edu/~galles/visualization/RadixSort.html
+https://brilliant.org/wiki/counting-sort/
+https://www.cs.usfca.edu/~galles/visualization/CountingSort.html

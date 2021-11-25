@@ -1,0 +1,25 @@
+//#1 - Sort 10 schools around your house by distance:
+Insertion sort. (fast on small sort, easy to code, space complexity O(1), data probably somewhat sorted)
+
+//#2 - eBay sorts listings by the current Bid amount:
+Radix or Counting sort. Bid is a number in a relatively small range, assuming them to be integers.
+
+//#3 - Sport scores on ESPN
+Quick sort. (if it's in memory, better go with a light&fast weapon that doesn't take too much space)
+
+//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+Merge sort.
+
+//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+Insertion sort.
+
+//#6 - Temperature Records for the past 50 years in Canada
+We could use radix/counting sort in case temperature values have no decimal places.
+If decimal places are there, just use quick sort.
+
+//#7 - Large user name database needs to be sorted. Data is very random.
+Merge sort (if we have enough memory).
+Quick sort (if I'm not too worried about worst case, to save some memory)
+
+//#8 - You want to teach sorting for the first time
+BUBBLE SORT! Yay! :)

@@ -19,3 +19,5 @@ Trade-offs are the key to choose one.
 - Merge sort
 - Quick sort
 
+animations: https://www.toptal.com/developers/sorting-algorithms
+dancing: https://www.youtube.com/watch?v=ywWBy6J5gz8&ab_channel=AlgoRythmics

@@ -1,0 +1,7 @@
+# Selection sort
+
+Easy algorithm.
+Scanning the array for the smaller element and swap it w/ the first position.
+
+Time complexity: O(n^2)
+Space complexity: O(1)

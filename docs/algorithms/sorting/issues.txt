@@ -4,3 +4,19 @@ Don't always trust your language's built-in sort method.
 Javascript has a shitty one. It converts numbers to strings. -_-
 A similar example is Italian letters (strings starting with an accent)
 sort() uses the lexicographical order (.charCodeAt()) -> ascii index used to compare.
+
+# Stable sorting
+
+A sorting algorithm is said to be stable if two objects with equal keys appear
+in the same order in sorted output as they appear in the input array to be sorted.
+Some sorting algorithms are stable by nature like Insertion sort, Merge Sort, Bubble Sort, etc.
+And some sorting algorithms are not, like Heap Sort, Quick Sort, etc.
+
+There's a few reasons why stability can be important.
+One is that, if two records don't need to be swapped by swapping them you can cause a memory update,
+a page is marked dirty, and needs to be re-written to disk (or another slow medium).
+
+It depends on what you do.
+Imagine you've got some people records with a first and a last name field.
+First you sort the list by first name. If you then sort the list with a stable algorithm by last name,
+you'll have a list sorted by first name AND last name.

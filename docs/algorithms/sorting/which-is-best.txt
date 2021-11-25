@@ -1,0 +1,16 @@
+# Which sort is best?
+
+- Insertion sort is easy, uses little space, it's good for almost sorted data, small datasets.
+
+- Bubble sort is rarely used (teaching purposes). Same with selection sort.
+
+- Merge sort is my favorite. O(n log(n)) always, no worst case scenario! At a cost: space complexity is O(n).
+But if sorting is on huge datasets and is outside of memory, go for it.
+
+- Quick sort is the most used. Little space complexity, and super fast on average.
+The gotcha is the worst case. It could be O(n^2)
+
+- Heap sort?! (similar to quick sort and merge sort,
+but with space complexity of O(1),
+but on average a bit worse of quick sort)
+https://brilliant.org/wiki/heap-sort/

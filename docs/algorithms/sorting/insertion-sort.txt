@@ -1,0 +1,14 @@
+# Insertion sort
+
+Bubble and selection sort are not really efficient nor used.
+
+Insertion sort is not the most efficient, but there's cases where it's actually extremely fast:
+when the array is "almost sorted".
+
+- We first loop over the array..
+- if the item we're looking for is less than the first item in the array, we move that item in front of the array, and shift it to the right
+
+- otherwise, we must figure out where the item should go;
+- another loop and if statement to find the right spot for the number.
+
+Best case scenario (almost sorted input): it's the fastest algorithm. Same with small datasets.
