@@ -1,0 +1,13 @@
+# Binary Search
+
+... If the data in the list is sorted, is that an advantage?
+
+Yes! we could visit half the item of the list!
+
+Like the good old phone book searching.
+
+We pick the index in the middle of the list and ask ourself:
+is the number we're looking for bigger or smaller than the item at the current index?
+if bigger, we discard the part of the list at the left of the index, and vice-versa.
+
+Sometimes looking for an element is called traversal.

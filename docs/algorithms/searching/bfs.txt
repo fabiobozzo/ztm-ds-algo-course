@@ -1,0 +1,20 @@
+# Breadth First Search
+
+Data is traversed 'horizontally'.
+First we read the root node, then all the nodes on level 2, then all the nodes on level 3...
+
+BFS takes memory, because we need to track the children of all the nodes on a given level.
+
+     9
+  4     20
+1  6   15  170
+
+BFS [9, 4, 20, 1, 6, 15, 170]
+
+---
+
+It's very good for:
+- finding shortest path
+- working with closer nodes could be useful
+
+Downside: memory occupation

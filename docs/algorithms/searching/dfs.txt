@@ -1,0 +1,26 @@
+# Depth First Search
+
+It follows one branch of the tree down to as many levels as possible,
+until the target is found or the end is reach,
+then continue with the nearest ancestor.
+
+Lower memory requirement than BFS.
+It's a vertical approach and looks like going through a maze.
+
+     9
+  4     20
+1  6   15  170
+
+DFS [9, 4, 1, 6, 20, 15, 170]
+
+Different than BFS, he? But why having 2 ways of traversing trees/charts?
+
+---
+
+PROs:
+- if we know a node is a leaf, it's efficient
+- it uses less memory
+- good with question: does a path exist?
+
+CONs:
+- it can get slow with deep graphs

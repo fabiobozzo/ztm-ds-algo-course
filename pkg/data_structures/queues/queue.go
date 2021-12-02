@@ -6,13 +6,14 @@ import (
 )
 
 type Queue interface {
-	Peek() (string, error)
-	Enqueue(string)
-	Dequeue() (string, error)
+	Peek() (interface{}, error)
+	Enqueue(interface{})
+	Dequeue() (interface{}, error)
+	Length() int
 }
 
 type Node struct {
-	Value string
+	Value interface{}
 	Next  *Node
 }
 
@@ -26,7 +27,7 @@ func NewLinkedListQueue() Queue {
 	return &linkedListQueue{}
 }
 
-func (l *linkedListQueue) Peek() (string, error) {
+func (l *linkedListQueue) Peek() (interface{}, error) {
 	if l.length <= 0 {
 		return "", constants.ErrEmpty
 	}
@@ -34,7 +35,7 @@ func (l *linkedListQueue) Peek() (string, error) {
 	return l.first.Value, nil
 }
 
-func (l *linkedListQueue) Enqueue(value string) {
+func (l *linkedListQueue) Enqueue(value interface{}) {
 	node := Node{
 		Value: value,
 	}
@@ -52,7 +53,7 @@ func (l *linkedListQueue) Enqueue(value string) {
 	l.length++
 }
 
-func (l *linkedListQueue) Dequeue() (string, error) {
+func (l *linkedListQueue) Dequeue() (interface{}, error) {
 	if l.length <= 0 {
 		return "", constants.ErrEmpty
 	}
@@ -68,13 +69,17 @@ func (l *linkedListQueue) Dequeue() (string, error) {
 	return dequeued.Value, nil
 }
 
+func (l *linkedListQueue) Length() int {
+	return l.length
+}
+
 func (l *linkedListQueue) String() string {
 	var toArray []string
 	var currentNode *Node
 
 	currentNode = l.first
 	for currentNode != nil {
-		toArray = append(toArray, currentNode.Value)
+		toArray = append(toArray, currentNode.Value.(string))
 		currentNode = currentNode.Next
 	}
 

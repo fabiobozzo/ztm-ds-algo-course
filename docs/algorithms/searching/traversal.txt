@@ -1,0 +1,14 @@
+# Graph & Tree Traversal
+
+It's a search basically.
+Sometimes we want to do something on traversed nodes.
+
+e.g. if nodes are object, adding new properties.
+maybe the tree/graph is not sorted, so we have to visit EVERY node.
+
+two ways (same for graphs and trees):
+
+- breadth first search (/traversal)
+- depth first search (/traversal)
+
+time complexity: O(n)

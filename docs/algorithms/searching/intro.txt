@@ -1,0 +1,13 @@
+# Searching
+
+Searching sounds much more useful of sorting.
+
+We do it everyday, searching files on our pc, searching documents online, etc.
+
+But how are computers able to search and find stuff so fast?
+
+Types of searching/traversal:
+- linear
+- binary
+- depth first
+- breadth first

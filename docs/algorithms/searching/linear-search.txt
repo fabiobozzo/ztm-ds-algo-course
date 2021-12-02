@@ -1,0 +1,19 @@
+# Linear Search
+
+In CS linear (sequential) search is about finding a target value in a list.
+
+It sequentially check every item of a list until the target item is found or the list is finished.
+
+In worst case, every single node has to be checked, e.g. if the item is not in the list.
+
+Javascript has different methods:
+
+- indexOf
+- findIndex
+- find
+- includes
+
+O(n) is ok... but not the best.
+We can't use it to index websites (google) or search for friends (facebook).
+
+If the data in the list is sorted, is that an advantage? ...
