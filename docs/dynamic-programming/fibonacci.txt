@@ -1,0 +1,42 @@
+# Fibonacci sequence calculation
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144...
+
+Problem:
+```
+function fibonacci(n) {
+    if (n < 2) {
+        return n;
+    }
+
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+```
+
+It's O(2^n).
+How to make it more efficient?
+
+We can make it O(n) via DP.
+There is a sub-problem whose solution is "optimal" (can be cached).
+
+Dynamic programming in the end is just "divide and conquer" + memoization.
+Can the problem be divided into sub-problems (tree of recursive solutions)? Are they repetitive?
+
+Solution:
+```
+function fibonacciMaster() {
+    let cache = {};
+    return function fib(n) {
+        if (n in cache) {
+            return cache[n];
+        } else {
+            if (n < 2) {
+                return n;
+            } else {
+                cache[n] = fib(n-1) + fib(n-2);
+                return cache[n];
+            }
+        }
+    }
+}
+```

@@ -1,0 +1,51 @@
+# Memoization
+
+## Caching
+
+It's a way to store values to be used later on.
+
+```
+function addTo80(n) {
+    return n + 80; // imagine this takes a long time (multiple seconds)
+}
+
+addTo80(5); // 85
+addTo80(5);
+addTo80(5);
+addTo80(5); // each time a lot of time is spent for the same solution
+
+let cache = {};
+function memoizedAddTo80(n) {
+    if (n in cache) {
+        return cache[n];
+    } else {
+        console.log('long time');
+        cache[n] = n + 80;
+        return cache[n];
+    }
+}
+```
+
+---
+
+Version with CLOSURES:
+
+```
+function memoizedAddTo80() {
+    let cache = {};
+    return function(n) {
+        if (n in cache) {
+            return cache[n];
+        } else {
+            console.log('long time');
+            cache[n] = n + 80;
+            return cache[n];
+        }
+    }
+}
+
+const memoized = memoizedAddTo80()
+
+console.log('1', memoized(5)); // prints long time
+console.log('1', memoized(5)); // reads from cache
+```

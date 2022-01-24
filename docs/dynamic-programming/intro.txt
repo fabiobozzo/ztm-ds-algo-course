@@ -1,0 +1,8 @@
+# Dynamic Programming
+
+DP is just an optimization technique, the name itself doesn't mean anything.
+
+If you have something that you can cache during execution, then use DP.
+
+Solve problems by breaking them into sub-problems. Solve sub-problems just once and store their solution to be reused,
+in case the next time it's needed again.
